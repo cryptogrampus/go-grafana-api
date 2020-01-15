@@ -1,6 +1,6 @@
 # grafana-api-golang-client
 
-[![Build Status](https://cloud.drone.io/api/badges/nytm/go-grafana-api/status.svg)](https://cloud.drone.io/nytm/go-grafana-api)
+[![Build Status](https://cloud.drone.io/api/badges/cryptogrampus/go-grafana-api/status.svg)](https://cloud.drone.io/cryptogrampus/go-grafana-api)
 
 Grafana HTTP API Client for Go
 
