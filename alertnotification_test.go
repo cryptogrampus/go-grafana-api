@@ -121,7 +121,7 @@ func TestNewAlertNotification(t *testing.T) {
 		DisableResolveMessage: true,
 		SendReminder:          true,
 		Frequency:             "15m",
-		Settings:              map[string]string{
+		Settings: map[string]string{
 			"addresses": "dev@grafana.com",
 		},
 	}
@@ -149,7 +149,7 @@ func TestUpdateAlertNotification(t *testing.T) {
 		DisableResolveMessage: true,
 		SendReminder:          true,
 		Frequency:             "15m",
-		Settings:              map[string]string{
+		Settings: map[string]string{
 			"addresses": "dev@grafana.com",
 		},
 	}
