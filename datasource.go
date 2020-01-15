@@ -40,12 +40,20 @@ type JSONData struct {
 	HttpMethod              string `json:"httpMethod,omitempty"`
 	QueryTimeout            string `json:"queryTimeout,omitempty"`
 	TimeInterval            string `json:"timeInterval,omitempty"`
+
+	AzureLogAnalyticsSameAs 		bool   `json:"azureLogAnalyticsSameAs,omitempty"`
+	ClientId						string `json:"clientId,omitempty"`
+	CloudName						string `json:"cloudName,omitempty"`
+	LogAnalyticsDefaultWorkspace	string `json:"logAnalyticsDefaultWorkspace,omitempty"`
+	SubscriptionId					string `json:"subscriptionId,omitempty"`
+	TenantId						string `json:"tenantId,omitempty"`
 }
 
 // SecureJSONData is a representation of the datasource `secureJsonData` property
 type SecureJSONData struct {
-	AccessKey string `json:"accessKey,omitempty"`
-	SecretKey string `json:"secretKey,omitempty"`
+	AccessKey 		string `json:"accessKey,omitempty"`
+	SecretKey 		string `json:"secretKey,omitempty"`
+	ClientSecret	string `json:"clientSecret,omitempty"`
 }
 
 func (c *Client) NewDataSource(s *DataSource) (int64, error) {
