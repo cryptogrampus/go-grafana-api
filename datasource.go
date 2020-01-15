@@ -30,6 +30,7 @@ type DataSource struct {
 	SecureJSONData SecureJSONData `json:"secureJsonData,omitempty"`
 }
 
+
 // JSONData is a representation of the datasource `jsonData` property
 type JSONData struct {
 	AssumeRoleArn           string `json:"assumeRoleArn,omitempty"`
