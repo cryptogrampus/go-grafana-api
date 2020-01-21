@@ -50,12 +50,12 @@ type JSONData struct {
 
 	Username                    string `json:"username,omitempty"`
 	Password                    string `json:"password,omitempty"`
-	Trends                      string `json:"trends,omitempty"`
+	Trends                      bool   `json:"trends,omitempty"`
 	TendsFrom                   string `json:"trendsFrom,omitempty"`
 	TrendsRange                 string `json:"trendsRange,omitempty"`
 	CacheTTL                    string `json:"cacheTTL,omitempty"`
-	Alerting                    string `json:"alerting,omitempty"`
-	AddThresholds               string `json:"addThresholds,omitempty"`
+	Alerting                    bool   `json:"alerting,omitempty"`
+	AddThresholds               bool   `json:"addThresholds,omitempty"`
 	AlertingMinSeverity         string `json:"alertingMinSeverity,omitempty"`
 	DisableReadOnlyUsersAck     string `json:"diableReadOnlyUsersAck,omitempty"`
 	DBConnectionEnable          string `json:"dbConnectionEnable,omitempty"`
