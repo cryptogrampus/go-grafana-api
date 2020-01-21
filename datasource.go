@@ -30,7 +30,6 @@ type DataSource struct {
 	SecureJSONData SecureJSONData `json:"secureJsonData,omitempty"`
 }
 
-
 // JSONData is a representation of the datasource `jsonData` property
 type JSONData struct {
 	AssumeRoleArn           string `json:"assumeRoleArn,omitempty"`
@@ -48,6 +47,20 @@ type JSONData struct {
 	LogAnalyticsDefaultWorkspace string `json:"logAnalyticsDefaultWorkspace,omitempty"`
 	SubscriptionId               string `json:"subscriptionId,omitempty"`
 	TenantId                     string `json:"tenantId,omitempty"`
+
+	Username                    string `json:"username,omitempty"`
+	Password                    string `json:"password,omitempty"`
+	Trends                      string `json:"trends,omitempty"`
+	TendsFrom                   string `json:"trendsFrom,omitempty"`
+	TrendsRange                 string `json:"trendsRange,omitempty"`
+	CacheTTL                    string `json:"cacheTTL,omitempty"`
+	Alerting                    string `json:"alerting,omitempty"`
+	AddThresholds               string `json:"addThresholds,omitempty"`
+	AlertingMinSeverity         string `json:"alertingMinSeverity,omitempty"`
+	DisableReadOnlyUsersAck     string `json:"diableReadOnlyUsersAck,omitempty"`
+	DBConnectionEnable          string `json:"dbConnectionEnable,omitempty"`
+	DBConnectionDatasourceName  string `json:"dbConnectionDatasourceName,omitempty"`
+	DBConnectionRetentionPolicy string `json:"dbConnectionRetentionPolicy,omitempty"`
 }
 
 // SecureJSONData is a representation of the datasource `secureJsonData` property
