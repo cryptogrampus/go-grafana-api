@@ -57,8 +57,8 @@ type JSONData struct {
 	Alerting                    bool   `json:"alerting,omitempty"`
 	AddThresholds               bool   `json:"addThresholds,omitempty"`
 	AlertingMinSeverity         string `json:"alertingMinSeverity,omitempty"`
-	DisableReadOnlyUsersAck     string `json:"diableReadOnlyUsersAck,omitempty"`
-	DBConnectionEnable          string `json:"dbConnectionEnable,omitempty"`
+	DisableReadOnlyUsersAck     bool   `json:"diableReadOnlyUsersAck,omitempty"`
+	DBConnectionEnable          bool   `json:"dbConnectionEnable,omitempty"`
 	DBConnectionDatasourceName  string `json:"dbConnectionDatasourceName,omitempty"`
 	DBConnectionRetentionPolicy string `json:"dbConnectionRetentionPolicy,omitempty"`
 }
